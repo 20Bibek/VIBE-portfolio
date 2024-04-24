@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Untitled.png" type="image/x-icon">
+    <title>VIBE</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id = "main">
+    <nav id="desktop-nav">
+      <div class="logo">🤖</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id = "signin"><a href="index1.html">Sign In</a></button></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">🤖</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><button><a href="index1.html">Sign In</a></button></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section-pic">
+        <img src="Untitled design.png" alt="Profile pic">
+        
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bibek Dash</h1>
+        <p class="section__text__p2">Computer Science Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Bibek Dash 2024.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="window.open('#contact')" href="contact">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="pngwing.com (1).png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/bibek-dash-a18997272/'"
+          />
+          <img
+            src="github-mark-white.png"
+            alt="My Github profile"
+            class="icon1"
+            onclick="location.href='https://github.com/20Bibek'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="gg.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              
+              <h3>Education</h3>
+              <p>+2 HSCE<br />Rajdhani Higher Secondary School of Sci, arts, comm.</p>
+            </div>
+            <div class="details-container">
+              
+              <h3>Education</h3>
+              <p>B-Tech Degree<br />Trident Academy of Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm Bibek Dash, a Computer Science B.Tech student with a flair for innovation and a passion for programming. Proficient in Python, HTML, CSS, and JavaScript, I enjoy crafting seamless web experiences. As I embark on my journey, I'm honing my skills in Data Structures and Algorithms, seeking exciting challenges to grow. Additionally, I'm well-versed in SQL, DBMS, and MongoDB for efficient data management. Eager to make my mark in the tech world, I'm open to collaborating on meaningful projects and making a positive impact. Let's connect and explore opportunities to revolutionize the future of technology!
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+    </section>
+    <div id="motiv">
+      <h3>Efforts</h3>
+      <p> Eager to learn new things <span id="onespan"></span> play with colors <span id="twospan"></span> create and decorate lifes <span id="threespan"></span> grow from mistakes.</p>
+    </div>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                
+                <div>
+                  <h3>Python programming<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAVJJREFUSEvNleFtAjEMhR+TFCaBTlKYpHQS6CQtkwCbtF8Vnxw3FyWXCtV/OKGcv/j52bfSg2L1II7+HWgtaS/pSRLPxE3SRdJneq6K01LRTtJHSmYQnxTg2/cFzjVSC+iUEhwkXV1FPi9VPf8FiKpIhnyloKrNKIjk25AkAheDjqnxc5csgejTi5MZ+BSlHtF4pOoJkr5LenUvIeUEiyBuas3vAeG4ewBRIcr8RAQBmWt4DYwjkc0rkTmxB4QMme6JbEOL5D4yg0RQqT/Igv7W6FgZVcwN8mT5loo4zKD2RlW6aAYOI413UyuwagYkQD6TwhZmr0F+DXBpjoDgPn4BERFk/5eqs5nKzrQu1QiKm5oZmmamRF8Kslzc2mQeXqq1ISY51WL9YVA0iFeGipijzGFLpeM9+5T7z4VtCYa5Zo7irmudke5zLWboTjoi3TDsCwSLRhtKrAHyAAAAAElFTkSuQmCC"/></h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>HTML<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAThJREFUSEvFlosNwjAMRN1NYBJgEmASYBJgEmASYBLgSTFymzhJW6mNhIRqx+c7f9pGJjrNRDgyK9BORLYjmT5+9482RooRQOeRQKcaoLWI3OYAelWCLozfXkQuJem48AxOdxHZVAIhN7JzuMPd/0nVyALBZjkAiDstJbz2/oTgFgiWVp4cfjWQDarJ0CA0Ss2JCHiMbFDNrgRiO3UQUFRYh1JK7mwzYLQd1GrTDggbAHuxUz3pWB+HEJRA798QrxI1wsbM2CHXZ62cPCC7hnSdpFZTytYLyGaowZCH5yxc/l+DbIxAKrEqRhaoZjtYqaP1A6InnS0ufmQNoC1+l6EyGAVUM6TqkxyH3BtW56IPCL7R+slJhw1p+Gnxvc2ArDQGp/VWLW1vj0Gu64qsZ/04KWY3xGEyRl/HR0obna9qUQAAAABJRU5ErkJggg=="/></h3>
+                  
+                </div>
+              </article>
+              <article>
+               
+                <div>
+                  <h3>CSS<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAUFJREFUSEvdloENwjAMBJ9NYBJgEmASYBJgEmASYBLoSTVySdImLSoSkZAqauf8tuN0opHWZCSOfgpaSFoNVHqVdPR7xBQBOg8E7Sv/3RigTY6iaZW620BFxaCLpGUm9CBpXdvig+97pbruWVvcJc16gPDBtxNE6khhwzgBJHrszAezQEBKEV1H9+Us2+NrIHJ++iCjxGrRmu6UIl9Y25sDSDelloGiDZQCcdi2LdHbK5sA/khEA8oB4fiopsU8Ujfb1E+TIhDngfSxbJz4/0xR7F0wfqJtWO/gIzRH0gMMZTzTGERPQ/gggqnQBvI5z5kOvqa9QQRE1PwoPmCeUU1An00TjJ82Rbyzds05tN4mGD9dIH/SS2DFINJCeqz4qZFEGm1iNC47H13JN4OBueat66hX4zpISS8BlaQvsP0/0AtBRU4bv0gDkQAAAABJRU5ErkJggg=="/></h3>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>JavaScript<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAQBJREFUSEvtlusNgkAQhIdOtBK1E61ErUStRDvRUuQjN8nGF3FBiAn3RzjYmZ3ZXc5KA61qIB6NRrSTtOhR5cpYj4rOkpY9Ed0kzSeijJuTdRnXmpj/sW5TsmXmnDl7LGZwG/Y7zZGDrzXwRZKnf1YS4OsCWWfrItG+zh7gQ1ED8fqXilCDCpP00gxREfaciirAIaR2trG3Grn3IcTGYyGhfqkaEUSWrKiIe8BtGY1BnazqK0XuLIrO4hdgGgBgkjARpNyjKCb1dMK+Oo8IZE4g9PJ77Hmu/IwEIE5bR6CHMnA2gO6yeGh+JPI8RKDsNURvj/IsaGvcaP+CWjPLvnAHbIpSG+G8xf8AAAAASUVORK5CYII="/></h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>React<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAjlJREFUSEvdlr9rVFEQhb+AgpIUNnYWWhmwSaG1WtqopVYaUlikCOQfULESERURsVKxsPYvMAEbKxPwV6eCoJ02doLeb5lZ7l5fHrtL2MILy3373rtzZs45M7tzzGjNzQiHcYAuA5+rT5ubz10b8U5n7n1Ah4FPwHXgZJz22oCuU8DVCP6lvHsJOL0TWB/QtQiYu8AvgacB9hhYroCtzIS898/qAzJQBq0PvgEOAQebaCbiGauaGGgTeFKdki6DuUwiq/X71EApcgKlZheBr8BzwOtXlWYmUoMPc+yj7gJwH3gb2Qq0BfyM0/uAJcBdgxwo+miK8+NSZ0a6SYetAieKk1Lolv/MXiArtLrjQatM2BaDVVeUHKtLBlCPd8CtcvgI8Au4Ub7PA7ejQlvgAXAsHGccExuxew1k0J3ET+FfAGcjyfcR3KTOAfca44yYowayR+qGzKr/RDXS8LFQdLTSYG9Y/QNwpuqpfMVqZWKEOstVm7q7vbcC/I77a0X0uxHlDrAeNGuKH02zmvhQhtZ10iC32ahpimxen5vhfkDqclqYnIHdM2HZGVq9y94eth+uAIsh+HaMl5vA94q6h4Wy14UJ6bUdtP6jrl7q6yMzE1TrukvhQgCLJV32jpnnZHCfuGHboWoQKbQpBfd6IHSsnOZTzbquofoN2DOLofosgFotph6qUqED1cAekiqDJTX1FPe5DpXWiTVKYQVTk3Zq+Dx1SdN0/ui1DVvpuvuX4/w52RXU/w/oL/8Ehht5QLQMAAAAAElFTkSuQmCC"/></h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>MongoDB<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAARtJREFUSEu9ldENwjAMBd1NYBJgE5gEmAQ2ASYBJoGcVEtW1cROoLEU9aNpzs92XgfpFEMnjrSAtiKySutak2QL6DaCdiLyisJqQUBQRABZLwECAMgG5TtEYDWKnmPJ7LmoAnT3YFHQJZVqnzkMCP0qRhT0cc4BVFQVAaEERaU4p5en0oYIaK5s9Ia7pOFOYASUGwILAsioZ+9VK4h+6H1SVX8HkTVrCiomHVFk3UAdYREQ03Q0jadsgOy9ch0iooimMxAacyDcoejmERAAW74pyB1tDoiCrCoyf5tyuq5QA2KvOoQFuY6g9Y4q0v0MxiaZ6GN8umbaCuI7hYUhtaXT5CghqkI/vF8U4QisoltPnby2R87fIv+6G+gLMi44G0aJD1IAAAAASUVORK5CYII="/></h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                
+                <div>
+                  <h3>Communication</h3>
+                  
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>Creativity</h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>Team Player</h3>
+                 
+                </div>
+              </article>
+              <article>
+               
+                <div>
+                  <h3>Good Listener</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="Email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:bibektunu41@gmail.com">bibektunu41@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="pngwing.com (1).png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/bibek-dash-a18997272/">LinkedIn</a></p>
+        </div>
+      </div>
+      
+    </section>
+    <div id="future">
+      <video src="Typing Code Background video(720P_HD).mp4" autoplay muted loop></video>
+      <div id="ftext">
+          <h1>Life is all about</h1>
+          <button>01010101</button>
+
+      </div>
+  </div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Bibek Dash. All Rights Reserved.</p>
+    </footer>
+    
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
+
+
